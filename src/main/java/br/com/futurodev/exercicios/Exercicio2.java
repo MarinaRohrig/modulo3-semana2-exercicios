@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class Application extends HttpServlet {
+public class Exercicio2 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -16,13 +16,14 @@ public class Application extends HttpServlet {
 
         PrintWriter writer = resp.getWriter();
 
-        String nome = req.getParameter("nome");
-        String idade = req.getParameter("idade");
-        String cidade = req.getParameter("cidade");
+        String login = req.getParameter("login");
+        String senha = req.getParameter("senha");
 
-        writer.println("<h3> Exercício 1</h3>");
-        writer.println("Olá "+nome+" você tem "+idade+" anos de idade e mora em: "+cidade+".");
-
+        if (login.equalsIgnoreCase("admin")&&(senha.equalsIgnoreCase("password"))){
+            writer.println("Bem-vindo usuário admin! :) ");
+        }else{
+            writer.println("Usuário e/ou senha inválidos! :( ");
+        }
 
     }
 }
