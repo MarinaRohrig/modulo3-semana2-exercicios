@@ -30,7 +30,7 @@
   <!-- Exercicio 3-->
   <servlet>
     <servlet-name>Exercicio3</servlet-name>
-    <servlet-class>br.com.futurodev.exercicios.Exercicio3</servlet-class>
+    <servlet-class>br.com.futurodev.exercicios.Exercicio3Cadastro</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Exercicio3</servlet-name>
