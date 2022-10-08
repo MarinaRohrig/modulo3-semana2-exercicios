@@ -11,6 +11,6 @@ public class Exercicio4 extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        req.getRequestDispatcher("modelo_formulario_post.html").forward(req, resp);
     }
 }

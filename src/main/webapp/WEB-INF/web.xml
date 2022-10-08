@@ -47,4 +47,14 @@
   </servlet-mapping>
 
 
+  <!-- Exercicio 4-->
+  <servlet>
+    <servlet-name>Exercicio4</servlet-name>
+    <servlet-class>br.com.futurodev.exercicios.Exercicio4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Exercicio4</servlet-name>
+    <url-pattern>/exercicio4</url-pattern>
+  </servlet-mapping>
+
 </web-app>
