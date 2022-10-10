@@ -27,11 +27,11 @@ public class Exercicio4 extends HttpServlet {
         Double media = ((nota1+nota2+nota3+nota4)/4);
 
         if (media > 7){
-            writer.println(nome+" foi aprovado em "+disciplina+"! :D");
+            writer.println("<h3>"+nome+" foi aprovado em "+disciplina+"! :D</h3>");
         }else if (media <=6.9 || media >6.0){
-            writer.println(nome+", em recuperação em "+disciplina+"! :/ ");
+            writer.println("<h3>"+nome+", em recuperação em "+disciplina+"! :/ </h3>");
         }else{
-            writer.println(nome+", reprovado em "+disciplina+"! =(");
+            writer.println("<h3>"+nome+", reprovado em "+disciplina+"! =(</h3>");
         }
     }
 }
