@@ -4,4 +4,57 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+
+  <!-- Exercicio 1-->
+  <servlet>
+    <servlet-name>Exercício 1</servlet-name>
+    <servlet-class>br.com.futurodev.exercicios.Exercicio1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Exercício 1</servlet-name>
+    <url-pattern>/exercicio1</url-pattern>
+  </servlet-mapping>
+
+  <!-- Exercicio 2-->
+  <servlet>
+    <servlet-name>Exercicio2</servlet-name>
+    <servlet-class>br.com.futurodev.exercicios.Exercicio2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Exercicio2</servlet-name>
+    <url-pattern>/exercicio2</url-pattern>
+  </servlet-mapping>
+
+  <!-- Exercicio 3-->
+  <servlet>
+    <servlet-name>Exercicio3</servlet-name>
+    <servlet-class>br.com.futurodev.exercicios.Exercicio3Cadastro</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Exercicio3</servlet-name>
+    <url-pattern>/cadastro</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Exercicio3Resultado</servlet-name>
+    <servlet-class>br.com.futurodev.exercicios.Exercicio3Resultado</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Exercicio3Resultado</servlet-name>
+    <url-pattern>/resultado</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- Exercicio 4-->
+  <servlet>
+    <servlet-name>Exercicio4</servlet-name>
+    <servlet-class>br.com.futurodev.exercicios.Exercicio4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Exercicio4</servlet-name>
+    <url-pattern>/exercicio4</url-pattern>
+  </servlet-mapping>
+
 </web-app>
