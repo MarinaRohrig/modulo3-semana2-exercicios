@@ -19,12 +19,17 @@ public class Exercicio4 extends HttpServlet {
 
         String nome = req.getParameter("nome");
         String disciplina = req.getParameter("disciplina");
-        Double nota1 = Double.parseDouble(req.getParameter("nota1"));
-        Double nota2 = Double.parseDouble(req.getParameter("nota2"));
-        Double nota3 = Double.parseDouble(req.getParameter("nota3"));
-        Double nota4 = Double.parseDouble(req.getParameter("nota4"));
+        String nota1 = req.getParameter("nota1");
+        String nota2 = req.getParameter("nota2");
+        String nota3 = req.getParameter("nota3");
+        String nota4 = req.getParameter("nota4");
 
-        Double media = ((nota1+nota2+nota3+nota4)/4);
+        Double nota1dbl = Double.parseDouble(nota1);
+        Double nota2dbl = Double.parseDouble(nota2);
+        Double nota3dbl = Double.parseDouble(nota3);
+        Double nota4dbl = Double.parseDouble(nota4);
+
+        Double media = ((nota1dbl+nota2dbl+nota3dbl+nota4dbl)/4);
 
         if (media > 7){
             writer.println("<h3>"+nome+" foi aprovado em "+disciplina+"! :D</h3>");
